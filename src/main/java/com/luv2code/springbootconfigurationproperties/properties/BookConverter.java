@@ -13,7 +13,7 @@ public class BookConverter implements Converter<String, Book>{
 	@Override
 	public Book convert(String s) {
 		String[] data = s.split(",");
-        return  new Book(data[0], Double.parseDouble(data[1]), data[2]);
+        return  new Book(data[0], Long.valueOf(data[1]), data[2]);
 	}
 
 }
